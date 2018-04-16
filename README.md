@@ -8,3 +8,7 @@ Features:
 - Shows progress bar UI. 
 - Uses URL Session to fetch data in async. 
 - Parses JSON data via Codable protocol. 
+
+Demo:
+
+![Demo](https://user-images.githubusercontent.com/799882/38799180-911686fc-4118-11e8-944a-828656e87b94.gif)
