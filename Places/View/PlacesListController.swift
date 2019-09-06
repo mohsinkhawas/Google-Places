@@ -38,7 +38,7 @@ class PlacesListViewController:  UIViewController, UITableViewDelegate, UITableV
         
         // Set up Refresh control if need.
         self.refreshControl = UIRefreshControl()
-        self.refreshControl?.addTarget(self, action: #selector(PlacesListViewController.reloadResults), for: UIControlEvents.valueChanged)
+        self.refreshControl?.addTarget(self, action: #selector(PlacesListViewController.reloadResults), for: UIControl.Event.valueChanged)
         
         self.tableView.addSubview(refreshControl!)
 
@@ -53,7 +53,7 @@ class PlacesListViewController:  UIViewController, UITableViewDelegate, UITableV
             
             let loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50))
             loadingIndicator.hidesWhenStopped = true
-            loadingIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+            loadingIndicator.style = UIActivityIndicatorView.Style.gray
             loadingIndicator.startAnimating();
             
             self.alertController?.view.addSubview(loadingIndicator)
